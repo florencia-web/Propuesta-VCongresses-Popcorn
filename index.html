@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cobertura Audiovisual — VCongresses × Popcorn</title>
+<meta name="description" content="Propuesta de cobertura audiovisual para evento corporativo de 2 jornadas. VCongresses × Popcorn. Producción audiovisual premium para generar material reutilizable de comunicación.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Paleta oficial Popcorn */
+  --purple-deep:#2E0854;      /* fondo principal */
+  --purple-darkest:#1A0433;   /* sombra de la marca (audiovisual) */
+  --purple:#7B1FA2;           /* acento principal */
+  --purple-soft:#B05CE6;      /* morado claro */
+  --purple-3a:#3A0B6E;        /* morado oscuro */
+  --cyan:#00FCE0;             /* acento brillante */
+  --cyan-deep:#0BB6A2;
+  --white:#FFFFFF;
+  --gray-100:#F5F6FA;         /* blanco roto */
+  --gray-300:#CFC9DA;
+  --gray-500:#9A8FB0;
+  --gray-700:#4A3E63;
+  --ink:#2E0854;              /* texto sobre claro */
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;
+  background:var(--purple-darkest);
+  color:var(--white);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.accent{color:var(--cyan)}
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.eyebrow{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--cyan);margin-bottom:22px;display:inline-block;
+}
+h1,h2,h3,h4,h5{font-family:'Public Sans',sans-serif;font-weight:800;letter-spacing:-0.02em;line-height:1.06}
+h1{font-size:clamp(42px,6vw,86px)}
+h2{font-size:clamp(28px,3.8vw,48px);margin-bottom:18px}
+h3{font-size:19px;font-weight:700;letter-spacing:-0.01em;line-height:1.3}
+p{color:var(--gray-300);font-size:15px;line-height:1.65}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--cyan);color:var(--purple-deep)}
+
+/* Highlight aqua — firma de marca Popcorn (resaltador: tinta oscura sobre aqua) */
+.hl{
+  color:var(--purple-deep);
+  background:var(--cyan);
+  padding:.04em .24em;border-radius:5px;
+  font-weight:700;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;
+}
+.hl-ink{color:var(--purple-deep)}
+
+/* ===== NAV ===== */
+.nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(26,4,51,0.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,0.07);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 32px;max-width:1400px;margin:0 auto}
+.nav-logo{height:34px;width:auto;display:block}
+.nav-links{display:flex;gap:30px}
+.nav-links a{font-size:13.5px;color:var(--gray-300);font-weight:500;transition:color 0.2s}
+.nav-links a:hover{color:var(--cyan)}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:12px 24px;border-radius:999px;font-weight:600;font-size:14px;
+  font-family:'Space Grotesk',sans-serif;
+  border:1px solid transparent;cursor:pointer;transition:transform 0.15s,background 0.2s,box-shadow .2s;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-cyan{background:var(--cyan);color:var(--purple-deep);box-shadow:0 8px 26px rgba(0,252,224,0.22)}
+.btn-cyan:hover{background:#4dffe9}
+.btn-ghost{background:transparent;border-color:rgba(255,255,255,0.24);color:var(--white)}
+.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+.btn-purple{background:var(--purple);color:var(--white)}
+.btn-purple:hover{background:#9128c4}
+@media(max-width:860px){.nav-links{display:none}}
+
+/* ===== HERO / PORTADA ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background-color:var(--purple-deep);
+  background-image:url("Img/hero.jpg");
+  background-size:cover;background-position:32% 32%;background-repeat:no-repeat;
+  background-blend-mode:multiply;
+  padding:120px 0 108px;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse at 82% 10%, rgba(0,252,224,0.15) 0%, transparent 48%),
+    radial-gradient(ellipse at 6% 92%, rgba(123,31,162,0.55) 0%, transparent 55%),
+    radial-gradient(ellipse at 100% 60%, rgba(20,3,38,0.78) 0%, transparent 46%),
+    linear-gradient(105deg, rgba(26,4,51,0.94) 0%, rgba(40,7,74,0.80) 44%, rgba(26,4,51,0.80) 100%);
+}
+.hero::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:160px;z-index:0;
+  background:linear-gradient(180deg, transparent 0%, var(--purple-darkest) 100%);
+  pointer-events:none;
+}
+.hero-rings{position:absolute;right:-60px;top:50%;transform:translateY(-50%);width:560px;height:560px;opacity:0.5;pointer-events:none}
+.hero-rings span{position:absolute;inset:0;border:1px solid rgba(0,252,224,0.18);border-radius:50%}
+.hero-rings span:nth-child(2){inset:70px;border-color:rgba(255,255,255,0.10)}
+.hero-rings span:nth-child(3){inset:150px;border-color:rgba(0,252,224,0.12)}
+.hero-rings span:nth-child(4){inset:230px;border-color:rgba(255,255,255,0.08)}
+.hero-rings .dot{position:absolute;left:50%;top:50%;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle,rgba(0,252,224,0.5),transparent 70%);transform:translate(-50%,-50%);filter:blur(6px);border:0}
+.hero-content{position:relative;z-index:2;max-width:880px}
+.pill{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:9px 18px;border-radius:999px;
+  background:rgba(0,252,224,0.10);border:1px solid rgba(0,252,224,0.32);
+  font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--cyan);
+  margin-bottom:34px;font-family:'Space Grotesk',sans-serif;
+}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
+.hero h1{margin-bottom:26px;color:var(--white)}
+.hero-client{
+  font-family:'Space Grotesk',sans-serif;font-weight:500;
+  font-size:clamp(15px,1.6vw,19px);letter-spacing:0.02em;color:rgba(255,255,255,0.9);
+  margin-bottom:20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.hero-client .x{color:var(--cyan);font-weight:700}
+.hero-bajada{font-size:17px;color:rgba(255,255,255,0.82);max-width:620px;margin-bottom:36px;line-height:1.6}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+
+/* ===== META BAND ===== */
+.meta{
+  background:linear-gradient(180deg, var(--purple-darkest) 0%, #22063f 100%);
+  padding:34px 0;border-top:1px solid rgba(255,255,255,0.07);
+}
+.meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:28px}
+.meta-item .meta-label{font-size:10px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:8px;font-family:'Space Grotesk',sans-serif}
+.meta-item .meta-value{font-size:15px;font-weight:600;color:var(--white);font-family:'Space Grotesk',sans-serif}
+.meta-item .meta-value b{color:var(--cyan);font-weight:700}
+
+/* ===== SECTIONS ===== */
+.section{padding:88px 0}
+.section-dark{background:var(--purple-darkest)}
+.section-tram{
+  background-color:#150330;
+  background-image:
+    radial-gradient(circle at 15% 10%,rgba(123,31,162,0.16) 0%,transparent 42%),
+    radial-gradient(circle at 90% 90%,rgba(0,252,224,0.06) 0%,transparent 45%),
+    linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);
+  background-size:auto,auto,58px 58px,58px 58px;
+}
+.section-purple{background:linear-gradient(165deg, var(--purple) 0%, var(--purple-3a) 100%)}
+.section-light{background:var(--gray-100);color:var(--ink)}
+.section-light p{color:var(--gray-700)}
+.section-light h2,.section-light h3,.section-light h4,.section-light h5{color:var(--purple-deep)}
+.section-light .eyebrow{color:var(--purple)}
+.section-header{max-width:820px;margin-bottom:48px}
+.section-header.center{margin-left:auto;margin-right:auto;text-align:center}
+.section-header h2{color:inherit}
+.section-header p{font-size:17px;margin-top:16px;line-height:1.6}
+
+.lede{
+  font-family:'Public Sans',sans-serif;
+  font-size:clamp(23px,2.8vw,34px);line-height:1.32;color:var(--white);
+  font-weight:600;margin-bottom:30px;max-width:900px;letter-spacing:-0.015em;
+}
+.section-light .lede{color:var(--purple-deep)}
+.body-text p{font-size:16px;line-height:1.75;max-width:800px;margin-bottom:18px}
+.body-text p strong{color:var(--white);font-weight:600}
+.section-light .body-text p strong{color:var(--purple-deep)}
+
+/* ===== INTRO — pilares del enfoque ===== */
+.intro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:12px}
+@media(max-width:860px){.intro-grid{grid-template-columns:1fr}}
+.intro-card{
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);
+  border-radius:20px;padding:32px;transition:border-color .2s,transform .2s;
+}
+.intro-card:hover{border-color:rgba(0,252,224,0.35);transform:translateY(-3px)}
+.intro-card .ico{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--cyan);font-weight:700;margin-bottom:16px;font-family:'Space Grotesk',sans-serif}
+.intro-card h4{font-size:20px;color:var(--white);margin-bottom:10px;line-height:1.2}
+.intro-card p{font-size:14.5px;line-height:1.65}
+
+/* ===== ALTERNATIVAS — comparación ===== */
+.alt-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px}
+@media(max-width:860px){.alt-grid{grid-template-columns:1fr}}
+.alt-card{
+  position:relative;border-radius:26px;padding:40px 36px;
+  display:flex;flex-direction:column;
+  border:1px solid rgba(255,255,255,0.1);
+  background:rgba(255,255,255,0.035);
+  transition:transform .2s;
+}
+.alt-card.a{}
+.alt-card.b{
+  border:1.5px solid var(--cyan);
+  background:linear-gradient(165deg, rgba(0,252,224,0.09) 0%, rgba(123,31,162,0.18) 100%);
+  box-shadow:0 24px 70px rgba(0,252,224,0.10);
+}
+.alt-card:hover{transform:translateY(-3px)}
+.alt-badge{
+  position:absolute;top:22px;right:22px;
+  background:var(--cyan);color:var(--purple-deep);
+  padding:7px 15px;border-radius:100px;
+  font-size:10.5px;font-weight:800;letter-spacing:0.16em;font-family:'Space Grotesk',sans-serif;
+  box-shadow:0 6px 20px rgba(0,252,224,0.35);
+}
+.alt-tag{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:var(--cyan);margin-bottom:14px;font-family:'Space Grotesk',sans-serif}
+.alt-card.a .alt-tag{color:var(--purple-soft)}
+.alt-card h3{font-size:28px;color:var(--white);line-height:1.12;margin-bottom:12px}
+.alt-sub{font-size:14px;color:var(--gray-300);margin-bottom:24px;font-family:'Space Grotesk',sans-serif}
+.alt-headline{
+  font-family:'Public Sans',sans-serif;font-weight:800;
+  font-size:19px;line-height:1.3;color:var(--white);margin-bottom:22px;letter-spacing:-0.01em;
+  padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,0.12);
+}
+.alt-headline .accent{color:var(--cyan)}
+.alt-points{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:26px;flex:1}
+.alt-points li{font-size:14.5px;color:rgba(255,255,255,0.86);padding-left:26px;position:relative;line-height:1.5;font-family:'Space Grotesk',sans-serif}
+.alt-points li::before{content:"";position:absolute;left:0;top:7px;width:13px;height:8px;border-left:2px solid var(--cyan);border-bottom:2px solid var(--cyan);transform:rotate(-45deg)}
+.alt-foot{font-size:13px;color:var(--gray-500);font-family:'Space Grotesk',sans-serif}
+.alt-price{font-family:'Public Sans',sans-serif;font-weight:800;font-size:28px;color:var(--white);letter-spacing:-0.02em;margin-top:6px}
+.alt-price small{font-size:14px;font-weight:600;color:var(--gray-300);margin-left:4px}
+
+/* ===== OPCIÓN DETALLE ===== */
+.opt-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:38px}
+.opt-hero .opt-titles{max-width:620px}
+.opt-num{font-family:'Public Sans',sans-serif;font-size:13px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;display:inline-block}
+.section-light .opt-num{color:var(--purple)}
+.opt-hero h2{margin-bottom:10px}
+.opt-hero .opt-desc{font-size:15px;color:var(--gray-700);font-family:'Space Grotesk',sans-serif;max-width:560px}
+.opt-recommend-flag{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--purple-deep);color:var(--white);
+  padding:11px 20px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:0.14em;
+  font-family:'Space Grotesk',sans-serif;flex-shrink:0;
+}
+.opt-recommend-flag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
+
+/* jornadas / horarios */
+.days-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px}
+@media(max-width:640px){.days-grid{grid-template-columns:1fr}}
+.day-card{
+  background:var(--white);border:1px solid #E7E2F0;border-radius:18px;padding:26px 28px;
+  display:flex;align-items:center;gap:20px;
+}
+.day-card .day-badge{
+  width:58px;height:58px;flex-shrink:0;border-radius:14px;
+  background:linear-gradient(150deg,var(--purple) 0%,var(--purple-3a) 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--white);
+}
+.day-card .day-badge .dnum{font-family:'Public Sans',sans-serif;font-size:22px;font-weight:800;line-height:1}
+.day-card .day-badge .dmon{font-size:9px;letter-spacing:0.12em;text-transform:uppercase;margin-top:2px;font-family:'Space Grotesk',sans-serif}
+.day-card .day-info .dname{font-family:'Public Sans',sans-serif;font-weight:800;font-size:17px;color:var(--purple-deep);margin-bottom:4px}
+.day-card .day-info .dtime{font-size:14px;color:var(--gray-700);font-family:'Space Grotesk',sans-serif}
+.day-card .day-info .dtime b{color:var(--purple);font-weight:700}
+
+/* includes list */
+.inc-block{background:var(--white);border:1px solid #E7E2F0;border-radius:22px;padding:12px 8px;overflow:hidden}
+.inc-title{padding:20px 28px 12px;font-family:'Public Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:0.16em;text-transform:uppercase;color:var(--purple-deep)}
+.inc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+@media(max-width:720px){.inc-grid{grid-template-columns:1fr}}
+.inc-item{
+  display:flex;gap:15px;align-items:flex-start;
+  padding:18px 28px;border-top:1px solid #F1EDF7;
+}
+.inc-item .chk{
+  width:24px;height:24px;flex-shrink:0;border-radius:7px;
+  background:rgba(123,31,162,0.10);position:relative;margin-top:1px;
+}
+.inc-item .chk::after{content:"";position:absolute;left:8px;top:5px;width:7px;height:12px;border-right:2px solid var(--purple);border-bottom:2px solid var(--purple);transform:rotate(45deg)}
+.inc-item .chk.hi{background:var(--cyan)}
+.inc-item .chk.hi::after{border-color:var(--purple-deep)}
+.inc-item .it-txt{font-size:14.5px;color:var(--gray-700);line-height:1.5;font-family:'Space Grotesk',sans-serif}
+.inc-item .it-txt b{color:var(--purple-deep);font-weight:700}
+
+/* condiciones destacadas */
+.cond-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+@media(max-width:640px){.cond-grid{grid-template-columns:1fr}}
+.cond-card{
+  background:linear-gradient(150deg, rgba(123,31,162,0.06), rgba(0,252,224,0.05));
+  border:1px solid #E7E2F0;border-radius:18px;padding:24px 26px;
+}
+.cond-card .cl{font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--purple);font-weight:700;margin-bottom:10px;font-family:'Space Grotesk',sans-serif;display:flex;align-items:center;gap:8px}
+.cond-card .cl::before{content:"";width:16px;height:16px;border-radius:50%;border:2px solid var(--purple);position:relative;flex-shrink:0}
+.cond-card h5{font-size:16px;color:var(--purple-deep);margin-bottom:6px;font-weight:800}
+.cond-card p{font-size:13.5px;color:var(--gray-700);line-height:1.55;font-family:'Space Grotesk',sans-serif}
+
+.opt-close{
+  margin-top:26px;padding:26px 30px;border-radius:18px;
+  background:linear-gradient(135deg,var(--purple) 0%,var(--purple-3a) 100%);
+  color:var(--white);display:flex;gap:18px;align-items:center;
+}
+.opt-close .oc-mark{font-family:'Public Sans',sans-serif;font-size:34px;font-weight:800;color:var(--cyan);line-height:1;flex-shrink:0}
+.opt-close p{color:rgba(255,255,255,0.95);font-size:16px;line-height:1.5;font-family:'Space Grotesk',sans-serif;margin:0}
+.opt-close p strong{color:var(--white);font-weight:700}
+
+/* Opción B — modo oscuro premium */
+.optb-inc .inc-block{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09)}
+.optb-inc .inc-title{color:var(--white)}
+.optb-inc .inc-item{border-top:1px solid rgba(255,255,255,0.07)}
+.optb-inc .inc-item .it-txt{color:rgba(255,255,255,0.86)}
+.optb-inc .inc-item .it-txt b{color:var(--white)}
+.optb-inc .inc-item .chk{background:rgba(0,252,224,0.14)}
+.optb-inc .inc-item .chk::after{border-color:var(--cyan)}
+.optb-inc .inc-item .chk.hi{background:var(--cyan)}
+.optb-inc .inc-item .chk.hi::after{border-color:var(--purple-deep)}
+.plus-banner{
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  background:linear-gradient(135deg, rgba(0,252,224,0.12) 0%, rgba(123,31,162,0.22) 100%);
+  border:1px solid rgba(0,252,224,0.3);border-radius:20px;padding:26px 30px;margin-bottom:22px;
+}
+.plus-banner .pb-plus{font-family:'Public Sans',sans-serif;font-size:40px;font-weight:800;color:var(--cyan);line-height:1;flex-shrink:0}
+.plus-banner .pb-txt h4{font-size:20px;color:var(--white);margin-bottom:5px}
+.plus-banner .pb-txt p{font-size:14.5px;color:rgba(255,255,255,0.82);font-family:'Space Grotesk',sans-serif}
+.inherit-banner{
+  display:flex;align-items:center;gap:16px;
+  background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.2);
+  border-radius:16px;padding:20px 26px;margin-bottom:22px;
+}
+.inherit-banner .ib-ico{font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--cyan);font-weight:700;font-family:'Space Grotesk',sans-serif}
+.inherit-banner p{font-size:14.5px;color:rgba(255,255,255,0.86);font-family:'Space Grotesk',sans-serif;margin:0}
+.inherit-banner p b{color:var(--white)}
+
+/* ===== BENEFICIOS ===== */
+.ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+@media(max-width:900px){.ben-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.ben-grid{grid-template-columns:1fr}}
+.ben-card{
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);
+  border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:14px;
+  transition:border-color .2s,transform .2s;min-height:190px;
+}
+.ben-card:hover{border-color:rgba(0,252,224,0.4);transform:translateY(-3px)}
+.ben-card .bn{font-family:'Public Sans',sans-serif;font-size:15px;font-weight:800;color:var(--purple-deep);background:var(--cyan);width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center}
+.ben-card p{font-size:15.5px;color:rgba(255,255,255,0.9);line-height:1.5;font-family:'Space Grotesk',sans-serif;font-weight:500}
+
+/* ===== OBSERVACIÓN TÉCNICA ===== */
+.obs-wrap{display:grid;grid-template-columns:0.9fr 1.1fr;gap:40px;align-items:start}
+@media(max-width:900px){.obs-wrap{grid-template-columns:1fr;gap:28px}}
+.obs-intro .lede{margin-bottom:20px}
+.obs-note{
+  margin-top:26px;padding:22px 26px;border-radius:16px;
+  background:rgba(0,252,224,0.08);border:1px solid rgba(0,252,224,0.28);
+}
+.obs-note .nl{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--cyan);font-weight:700;margin-bottom:8px;font-family:'Space Grotesk',sans-serif}
+.obs-note p{font-size:14.5px;color:rgba(255,255,255,0.9);font-family:'Space Grotesk',sans-serif;margin:0;line-height:1.55}
+.obs-focus-label{font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--cyan);font-weight:700;margin-bottom:18px;font-family:'Space Grotesk',sans-serif}
+.obs-chips{display:flex;flex-wrap:wrap;gap:12px}
+.obs-chip{
+  display:flex;align-items:center;gap:11px;
+  background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);
+  border-radius:14px;padding:16px 20px;font-family:'Space Grotesk',sans-serif;
+  font-size:15px;color:var(--white);font-weight:500;transition:border-color .2s,transform .2s;
+}
+.obs-chip:hover{border-color:rgba(0,252,224,0.4);transform:translateY(-2px)}
+.obs-chip .oc-dot{width:9px;height:9px;border-radius:50%;background:var(--cyan);flex-shrink:0;box-shadow:0 0 8px rgba(0,252,224,0.6)}
+
+/* ===== EXPERIENCIA / VIDEOS ===== */
+.reel-featured{margin-bottom:22px}
+.video-wrap{
+  position:relative;width:100%;border-radius:22px;overflow:hidden;
+  border:1px solid rgba(255,255,255,0.12);
+  box-shadow:0 26px 90px rgba(0,0,0,0.55);cursor:pointer;background:#000;
+}
+.video-wrap::before{content:"";display:block;padding-top:56.25%}
+.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease-out}
+.video-wrap:hover .video-poster{transform:scale(1.04)}
+.video-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg, rgba(26,4,51,0.15) 0%, rgba(26,4,51,0.62) 100%);
+  display:flex;align-items:center;justify-content:center;transition:opacity .3s;
+}
+.video-overlay-info{position:absolute;left:30px;bottom:26px;color:var(--white)}
+.video-overlay-info .src{display:block;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--cyan);margin-bottom:5px;font-family:'Space Grotesk',sans-serif}
+.video-overlay-info .vt{font-family:'Public Sans',sans-serif;font-weight:800;font-size:20px}
+.play-btn{
+  width:88px;height:88px;border-radius:50%;background:rgba(255,255,255,0.96);border:0;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:transform .2s,background .2s;
+  box-shadow:0 16px 44px rgba(0,0,0,0.5);
+}
+.video-wrap:hover .play-btn{transform:scale(1.08);background:var(--cyan)}
+.play-btn .tri{width:0;height:0;border-left:24px solid var(--purple-deep);border-top:15px solid transparent;border-bottom:15px solid transparent;margin-left:6px}
+.video-wrap.playing .video-poster,.video-wrap.playing .video-overlay{display:none}
+
+.reel-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:16px}
+.reel-grid.four{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.reel-grid,.reel-grid.four{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.reel-grid,.reel-grid.four{grid-template-columns:1fr 1fr}}
+.reel{
+  position:relative;border-radius:16px;overflow:hidden;cursor:pointer;
+  border:1px solid rgba(255,255,255,0.1);background:#000;aspect-ratio:9/13;
+  transition:transform .2s,border-color .2s;
+}
+.reel:hover{transform:translateY(-4px);border-color:rgba(0,252,224,0.45)}
+.reel img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease-out;display:block}
+.reel:hover img{transform:scale(1.07)}
+.reel .r-ov{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(26,4,51,0.05) 30%,rgba(26,4,51,0.85) 100%);
+  display:flex;align-items:center;justify-content:center;transition:opacity .2s;
+}
+.reel .r-ov::after{
+  content:"";width:0;height:0;border-left:18px solid var(--white);
+  border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px;
+  filter:drop-shadow(0 2px 6px rgba(0,0,0,0.5));transition:transform .2s;
+}
+.reel:hover .r-ov::after{transform:scale(1.18);border-left-color:var(--cyan)}
+.reel .r-label{position:absolute;left:0;right:0;bottom:0;padding:14px;color:var(--white);font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;text-shadow:0 1px 5px rgba(0,0,0,0.7)}
+.reel .r-label span{display:block;font-size:10px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--cyan);margin-bottom:2px}
+.reel.playing img,.reel.playing .r-ov,.reel.playing .r-label{display:none}
+.reel.playing iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.reel-note{text-align:center;margin-top:26px;font-size:13px;color:var(--gray-500);font-family:'Space Grotesk',sans-serif}
+.reel-note a{color:var(--cyan);font-weight:600}
+
+/* ===== CASO DE ÉXITO ===== */
+.caso-wrap{display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center}
+@media(max-width:900px){.caso-wrap{grid-template-columns:1fr;gap:28px}}
+.caso-info .caso-eyebrow{font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--cyan);font-weight:700;margin-bottom:18px;font-family:'Space Grotesk',sans-serif}
+.caso-info h2{margin-bottom:16px}
+.caso-info p{font-size:16px;line-height:1.7;color:rgba(255,255,255,0.85);margin-bottom:16px;font-family:'Space Grotesk',sans-serif}
+.caso-meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+.caso-tag{
+  background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);
+  border-radius:12px;padding:12px 18px;font-family:'Space Grotesk',sans-serif;
+}
+.caso-tag .ct-l{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-500);font-weight:600;display:block;margin-bottom:3px}
+.caso-tag .ct-v{font-size:14px;color:var(--white);font-weight:600}
+.caso-tag .ct-v.acc{color:var(--cyan)}
+
+/* ===== INVERSIÓN ===== */
+.inv-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px;align-items:stretch}
+@media(max-width:860px){.inv-grid{grid-template-columns:1fr}}
+.inv-card{
+  position:relative;border-radius:26px;padding:40px 36px;
+  display:flex;flex-direction:column;
+  background:var(--white);border:1px solid #E7E2F0;
+}
+.inv-card.b{
+  background:linear-gradient(165deg,var(--purple-deep) 0%,var(--purple-3a) 100%);
+  border:1.5px solid var(--cyan);box-shadow:0 26px 80px rgba(46,8,84,0.4);
+}
+.inv-badge{
+  position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+  background:var(--cyan);color:var(--purple-deep);
+  padding:8px 20px;border-radius:100px;font-size:11px;font-weight:800;letter-spacing:0.16em;
+  font-family:'Space Grotesk',sans-serif;box-shadow:0 8px 24px rgba(0,252,224,0.4);white-space:nowrap;
+}
+.inv-tag{font-size:12px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;margin-bottom:10px;font-family:'Space Grotesk',sans-serif;color:var(--purple)}
+.inv-card.b .inv-tag{color:var(--cyan)}
+.inv-card h3{font-size:22px;line-height:1.15;margin-bottom:6px;color:var(--purple-deep)}
+.inv-card.b h3{color:var(--white)}
+.inv-card .inv-sub{font-size:13.5px;font-family:'Space Grotesk',sans-serif;color:var(--gray-700);margin-bottom:26px}
+.inv-card.b .inv-sub{color:rgba(255,255,255,0.75)}
+.inv-amount{font-family:'Public Sans',sans-serif;font-weight:800;letter-spacing:-0.03em;line-height:1;color:var(--purple-deep);margin-bottom:6px}
+.inv-amount .cur{font-size:26px;vertical-align:top;margin-right:4px;font-weight:700}
+.inv-amount .num{font-size:clamp(44px,6vw,60px)}
+.inv-card.b .inv-amount{color:var(--white)}
+.inv-card.b .inv-amount .num{color:var(--cyan)}
+.inv-iva{font-size:13px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;color:var(--gray-500);font-family:'Space Grotesk',sans-serif;margin-bottom:26px}
+.inv-card.b .inv-iva{color:rgba(255,255,255,0.6)}
+.inv-feats{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px;flex:1;border-top:1px solid #F1EDF7;padding-top:24px}
+.inv-card.b .inv-feats{border-top:1px solid rgba(255,255,255,0.14)}
+.inv-feats li{font-size:14px;color:var(--gray-700);padding-left:24px;position:relative;line-height:1.5;font-family:'Space Grotesk',sans-serif}
+.inv-card.b .inv-feats li{color:rgba(255,255,255,0.85)}
+.inv-feats li::before{content:"";position:absolute;left:0;top:6px;width:12px;height:7px;border-left:2px solid var(--purple);border-bottom:2px solid var(--purple);transform:rotate(-45deg)}
+.inv-card.b .inv-feats li::before{border-color:var(--cyan)}
+.inv-card .btn{width:100%;justify-content:center}
+.inv-legal{text-align:center;margin-top:30px;font-size:13px;color:var(--gray-500);font-family:'Space Grotesk',sans-serif}
+
+/* Formas de pago */
+.pay-section{margin-top:56px;padding-top:52px;border-top:1px solid #E7E2F0}
+.pay-head{text-align:center;max-width:640px;margin:0 auto 34px}
+.pay-head .eyebrow{color:var(--purple)}
+.pay-head h3{font-size:clamp(24px,3vw,34px);color:var(--purple-deep);font-weight:800;letter-spacing:-0.02em;line-height:1.12}
+.pay-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:920px;margin:0 auto}
+@media(max-width:760px){.pay-grid{grid-template-columns:1fr}}
+.pay-card{
+  position:relative;background:var(--white);border:1px solid #E7E2F0;border-radius:22px;
+  padding:34px 32px;display:flex;flex-direction:column;gap:12px;
+  transition:transform .2s,box-shadow .2s;
+}
+.pay-card:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(46,8,84,0.10)}
+.pay-card.featured{border:1.5px solid var(--purple);background:linear-gradient(160deg,#FFFFFF 0%,#F6EFFC 100%)}
+.pay-card .pay-op{font-family:'Space Grotesk',sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--purple);font-weight:700}
+.pay-card h4{font-size:22px;color:var(--purple-deep);font-weight:800;letter-spacing:-0.01em;line-height:1.15}
+.pay-card p{font-size:14.5px;color:var(--gray-700);line-height:1.6;font-family:'Space Grotesk',sans-serif}
+.pay-card p b{color:var(--purple-deep);font-weight:700}
+.pay-badge{
+  position:absolute;top:22px;right:22px;background:var(--cyan);color:var(--purple-deep);
+  padding:7px 14px;border-radius:100px;font-family:'Space Grotesk',sans-serif;
+  font-size:12px;font-weight:800;letter-spacing:0.08em;box-shadow:0 6px 18px rgba(0,252,224,0.32);
+}
+.pay-steps{display:flex;gap:10px;margin-top:4px}
+.pay-step{flex:1;background:rgba(123,31,162,0.06);border:1px solid #EADBF6;border-radius:12px;padding:14px 16px;text-align:center}
+.pay-step .ps-pct{font-family:'Public Sans',sans-serif;font-size:24px;font-weight:800;color:var(--purple);line-height:1}
+.pay-step .ps-when{font-family:'Space Grotesk',sans-serif;font-size:11.5px;color:var(--gray-700);margin-top:6px;line-height:1.35}
+
+/* ===== CIERRE / FOOTER ===== */
+.close{
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(0,252,224,0.12) 0%, transparent 55%),
+    linear-gradient(180deg, var(--purple-deep) 0%, var(--purple-darkest) 100%);
+  padding:100px 0 0;text-align:center;position:relative;overflow:hidden;
+}
+.close-logo{height:52px;width:auto;margin:0 auto 34px;display:block}
+.close h2{font-size:clamp(30px,4.4vw,54px);color:var(--white);max-width:820px;margin:0 auto 22px;line-height:1.1}
+.close p{font-size:17px;color:rgba(255,255,255,0.82);max-width:560px;margin:0 auto 36px;font-family:'Space Grotesk',sans-serif}
+.close-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:80px}
+.footer{border-top:1px solid rgba(255,255,255,0.08);padding:40px 0}
+.footer-grid{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.footer-brand{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.footer-brand img{height:26px;width:auto;max-width:170px;object-fit:contain;align-self:flex-start;flex:0 0 auto}
+.footer-brand p{font-size:12px;color:var(--gray-500);font-family:'Space Grotesk',sans-serif}
+.footer-contact{display:flex;gap:36px;flex-wrap:wrap}
+.footer-contact .fc-item .fl{font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gray-500);font-weight:600;margin-bottom:5px;font-family:'Space Grotesk',sans-serif}
+.footer-contact .fc-item .fv{font-size:14px;color:var(--white);font-weight:500;font-family:'Space Grotesk',sans-serif}
+.footer-contact .fc-item .fv a:hover{color:var(--cyan)}
+
+/* ===== REVEAL ===== */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1)}
+.reveal.in-view{opacity:1;transform:none}
+.reveal.delay-1{transition-delay:.06s}.reveal.delay-2{transition-delay:.12s}
+.reveal.delay-3{transition-delay:.18s}.reveal.delay-4{transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ===== GATE / ACCESO ===== */
+body.locked{overflow:hidden;height:100vh}
+.gate{
+  position:fixed;inset:0;z-index:2000;display:flex;align-items:center;justify-content:center;
+  padding:24px;
+  background:
+    radial-gradient(ellipse at 78% 14%, rgba(0,252,224,0.14) 0%, transparent 52%),
+    radial-gradient(ellipse at 10% 90%, rgba(123,31,162,0.42) 0%, transparent 55%),
+    linear-gradient(180deg, var(--purple-deep) 0%, var(--purple-darkest) 100%);
+}
+.gate.hidden{opacity:0;visibility:hidden;transition:opacity .5s ease,visibility .5s ease}
+.gate-rings{position:absolute;right:-80px;top:50%;transform:translateY(-50%);width:520px;height:520px;opacity:0.4;pointer-events:none}
+.gate-rings span{position:absolute;inset:0;border:1px solid rgba(0,252,224,0.16);border-radius:50%}
+.gate-rings span:nth-child(2){inset:70px;border-color:rgba(255,255,255,0.09)}
+.gate-rings span:nth-child(3){inset:150px;border-color:rgba(0,252,224,0.11)}
+.gate-card{
+  position:relative;z-index:1;width:100%;max-width:420px;
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);
+  border-radius:26px;padding:44px 40px;backdrop-filter:blur(10px);
+  box-shadow:0 30px 90px rgba(0,0,0,0.5);
+}
+.gate-card img{height:32px;width:auto;display:block;margin-bottom:30px}
+.gate-card .g-eyebrow{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px;display:block}
+.gate-card h2{font-size:26px;color:var(--white);line-height:1.15;margin-bottom:8px}
+.gate-card .g-sub{font-size:14px;color:var(--gray-300);font-family:'Space Grotesk',sans-serif;margin-bottom:28px;line-height:1.5}
+.g-field{margin-bottom:16px}
+.g-field label{display:block;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-500);margin-bottom:8px}
+.g-field input{
+  width:100%;padding:14px 16px;border-radius:12px;
+  background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);
+  color:var(--white);font-family:'Space Grotesk',sans-serif;font-size:15px;letter-spacing:0.02em;
+  transition:border-color .2s,background .2s;
+}
+.g-field input::placeholder{color:var(--gray-500)}
+.g-field input:focus{outline:none;border-color:var(--cyan);background:rgba(0,252,224,0.06)}
+.gate .btn{width:100%;justify-content:center;margin-top:8px}
+.g-error{
+  font-family:'Space Grotesk',sans-serif;font-size:13px;color:#FF6B8A;
+  margin-top:14px;min-height:18px;opacity:0;transition:opacity .2s;
+}
+.g-error.show{opacity:1}
+.g-foot{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.08);font-family:'Space Grotesk',sans-serif;font-size:12px;color:var(--gray-500);line-height:1.5}
+.g-foot a{color:var(--cyan)}
+</style>
+</head>
+<body class="locked">
+
+<!-- GATE / ACCESO -->
+<div class="gate" id="gate">
+  <div class="gate-rings"><span></span><span></span><span></span></div>
+  <div class="gate-card">
+    <img src="Img/popcorn-blanco.png" alt="Popcorn">
+    <span class="g-eyebrow">Acceso privado</span>
+    <h2>Propuesta VCongresses</h2>
+    <p class="g-sub">Ingresá tus credenciales para ver la propuesta de cobertura audiovisual.</p>
+    <form id="gate-form" autocomplete="off" novalidate>
+      <div class="g-field">
+        <label for="g-user">Usuario</label>
+        <input type="text" id="g-user" name="g-user" placeholder="Usuario" autocapitalize="characters" spellcheck="false">
+      </div>
+      <div class="g-field">
+        <label for="g-pass">Contraseña</label>
+        <input type="password" id="g-pass" name="g-pass" placeholder="Contraseña">
+      </div>
+      <button type="submit" class="btn btn-cyan">Ingresar</button>
+      <div class="g-error" id="g-error">Usuario o contraseña incorrectos.</div>
+    </form>
+    <div class="g-foot">¿Problemas para ingresar? Escribinos a <a href="mailto:demianlinet@somospopcorn.com">demianlinet@somospopcorn.com</a></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <img class="nav-logo" src="Img/popcorn-blanco.png" alt="Popcorn">
+    <div class="nav-links">
+      <a href="#intro">Propuesta</a>
+      <a href="#alternativas">Alternativas</a>
+      <a href="#opcion-a">Opción A</a>
+      <a href="#opcion-b">Opción B</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#inversion">Inversión</a>
+    </div>
+    <a href="#inversion" class="btn btn-cyan">Ver inversión</a>
+  </div>
+</nav>
+
+<!-- PORTADA -->
+<header class="hero">
+  <div class="hero-rings"><span></span><span></span><span></span><span></span><i class="dot"></i></div>
+  <div class="container hero-content">
+    <span class="pill">Propuesta de cobertura audiovisual</span>
+    <div class="hero-client"><span>VCongresses</span><span class="x">×</span><span>Popcorn</span></div>
+    <h1>Cobertura<br>Audiovisual<br><span class="accent">Evento corporativo</span></h1>
+    <p class="hero-bajada">Dos jornadas de registro profesional pensadas para generar <span class="hl">material audiovisual reutilizable</span> para la comunicación de VCongresses. Producción, fotografía, entrevistas y edición, con el estándar de Popcorn.</p>
+    <div class="hero-cta">
+      <a href="#alternativas" class="btn btn-cyan">Ver las dos alternativas</a>
+      <a href="#experiencia" class="btn btn-ghost">Experiencia Popcorn</a>
+    </div>
+  </div>
+</header>
+
+<!-- META BAND -->
+<section class="meta">
+  <div class="container">
+    <div class="meta-grid">
+      <div class="meta-item"><div class="meta-label">Cliente</div><div class="meta-value">VCongresses</div></div>
+      <div class="meta-item"><div class="meta-label">Tipo de evento</div><div class="meta-value">Evento corporativo</div></div>
+      <div class="meta-item"><div class="meta-label">Cobertura</div><div class="meta-value"><b>2 jornadas</b></div></div>
+      <div class="meta-item"><div class="meta-label">Fechas</div><div class="meta-value">12 y 13 de agosto</div></div>
+      <div class="meta-item"><div class="meta-label">Alternativas</div><div class="meta-value">Opción A · <b>Opción B</b></div></div>
+      <div class="meta-item"><div class="meta-label">Producción</div><div class="meta-value">Popcorn</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRODUCCIÓN -->
+<section class="section section-dark" id="intro">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">La propuesta</span>
+      <h2>Un evento sucede una vez.<br>El <span class="accent">contenido</span>, muchas.</h2>
+    </div>
+    <div class="body-text" style="margin-bottom:44px">
+      <p class="lede">Proponemos una cobertura audiovisual de dos jornadas diseñada, desde el primer minuto, para generar <span class="hl">material reutilizable</span> para comunicación: piezas, recursos y registro que VCongresses podrá seguir usando mucho después de que el evento termine.</p>
+      <p>No se trata de documentar por documentar. Cada plano, cada entrevista y cada toma de recurso se captura pensando en la vida posterior del evento: redes, comunicación institucional, banco de imágenes y futuras piezas. Popcorn aporta a esa mirada su experiencia en producción audiovisual y en cobertura profesional de eventos corporativos.</p>
+    </div>
+    <div class="intro-grid">
+      <div class="intro-card reveal"><div class="ico">Registro</div><h4>Cobertura completa</h4><p>Dos jornadas de video y fotografía profesional, con entrevistas, ambiente, detalles y tomas de recurso para banco de imágenes.</p></div>
+      <div class="intro-card reveal"><div class="ico">Reutilizable</div><h4>Material que trabaja</h4><p>Todo el registro se piensa como insumo de comunicación: reels para redes y recursos audiovisuales para futuras piezas institucionales.</p></div>
+      <div class="intro-card reveal"><div class="ico">Dos caminos</div><h4>A elección</h4><p>Dos alternativas de contratación para el mismo evento: una que optimiza el presupuesto y una premium, recomendada, con mayor capacidad de registro.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ALTERNATIVAS -->
+<section class="section section-tram" id="alternativas">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow">Dos alternativas de cobertura</span>
+      <h2>Elegí cómo querés<br>vivir el <span class="accent">registro</span></h2>
+      <p>Ambas cubren las dos jornadas completas. La diferencia está en la capacidad de registro simultáneo y en la variedad de material que se obtiene.</p>
+    </div>
+    <div class="alt-grid">
+      <div class="alt-card a">
+        <div class="alt-tag">Opción A</div>
+        <h3>Cobertura audiovisual</h3>
+        <div class="alt-sub">2 jornadas</div>
+        <div class="alt-headline">Cobertura completa <span class="accent">optimizando el presupuesto</span></div>
+        <ul class="alt-points">
+          <li>1 filmmaker que cubre video y fotografía</li>
+          <li>Registro audiovisual de ambas jornadas</li>
+          <li>Fotografías editadas ilimitadas</li>
+          <li>Edición de 5 reels para redes</li>
+          <li>Entrevistas, B-Roll y audio con micrófonos externos</li>
+        </ul>
+        <div class="alt-foot">Desde</div>
+        <div class="alt-price"><span class="cur">$</span>3.300.000 <small>+ IVA</small></div>
+      </div>
+      <div class="alt-card b">
+        <div class="alt-badge">★ RECOMENDADA</div>
+        <div class="alt-tag">Opción B</div>
+        <h3>Cobertura audiovisual premium</h3>
+        <div class="alt-sub">2 jornadas</div>
+        <div class="alt-headline">Cobertura premium + <span class="accent">mayor cantidad de material</span> + mayor capacidad de registro simultáneo</div>
+        <ul class="alt-points">
+          <li>Todo lo incluido en la Opción A</li>
+          <li>1 filmmaker enfocado en video</li>
+          <li>+ 1 fotógrafo profesional dedicado exclusivamente a fotografía</li>
+          <li>Cobertura simultánea de momentos en paralelo</li>
+          <li>Mayor calidad del banco fotográfico y audiovisual</li>
+        </ul>
+        <div class="alt-foot">Desde</div>
+        <div class="alt-price"><span class="cur">$</span>4.400.000 <small>+ IVA</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPCIÓN A -->
+<section class="section section-light" id="opcion-a">
+  <div class="container">
+    <div class="opt-hero">
+      <div class="opt-titles">
+        <span class="opt-num">Opción A</span>
+        <h2>Cobertura audiovisual<br>— 2 jornadas</h2>
+        <p class="opt-desc">Un registro completo del evento con un filmmaker que cubre video y fotografía, optimizando el presupuesto sin resignar entregables.</p>
+      </div>
+    </div>
+
+    <div class="days-grid">
+      <div class="day-card">
+        <div class="day-badge"><span class="dnum">12</span><span class="dmon">AGO</span></div>
+        <div class="day-info"><div class="dname">Miércoles 12 de agosto</div><div class="dtime"><b>10:00 a 20:00</b></div></div>
+      </div>
+      <div class="day-card">
+        <div class="day-badge"><span class="dnum">13</span><span class="dmon">AGO</span></div>
+        <div class="day-info"><div class="dname">Jueves 13 de agosto</div><div class="dtime"><b>9:00 a 18:30</b></div></div>
+      </div>
+    </div>
+
+    <div class="inc-block">
+      <div class="inc-title">Incluye</div>
+      <div class="inc-grid">
+        <div class="inc-item"><span class="chk"></span><span class="it-txt"><b>2 jornadas</b> de cobertura audiovisual.</span></div>
+        <div class="inc-item"><span class="chk"></span><span class="it-txt"><b>1 filmmaker.</b></span></div>
+        <div class="inc-item"><span class="chk"></span><span class="it-txt">Cobertura fotográfica realizada por el filmmaker.</span></div>
+        <div class="inc-item"><span class="chk"></span><span class="it-txt">Fotografías editadas con retoque básico <b>(cantidad ilimitada)</b>.</span></div>
+        <div class="inc-item"><span class="chk"></span><span class="it-txt">Registro audiovisual de ambas jornadas.</span></div>
+        <div class="inc-item"><span class="chk"></span><span class="it-txt">Tomas de recurso (B-Roll) para banco de imágenes.</span></div>
+        <div class="inc-item"><span class="chk"></span><span class="it-txt">Registro de entrevistas a expositores y asistentes.</span></div>
+        <div class="inc-item"><span class="chk"></span><span class="it-txt">Captura de audio mediante micrófonos externos.</span></div>
+        <div class="inc-item"><span class="chk"></span><span class="it-txt">Entrega del material audiovisual en crudo mediante Google Drive o disco provisto por el cliente.</span></div>
+        <div class="inc-item"><span class="chk hi"></span><span class="it-txt">Edición de <b>5 reels resumen</b> para redes sociales.</span></div>
+      </div>
+    </div>
+
+    <div class="cond-grid">
+      <div class="cond-card">
+        <div class="cl">Documentación</div>
+        <h5>Certificado de Accidentes Personales del equipo</h5>
+        <p>El equipo asiste con la cobertura de Accidentes Personales correspondiente.</p>
+      </div>
+      <div class="cond-card">
+        <div class="cl">Documentación</div>
+        <h5>Cláusula de No Repetición</h5>
+        <p>Según requerimientos del lugar.</p>
+      </div>
+    </div>
+
+    <div class="opt-close">
+      <span class="oc-mark">A</span>
+      <p><strong>Ideal para eventos donde la prioridad es obtener un registro completo optimizando el presupuesto.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- OPCIÓN B -->
+<section class="section section-dark optb-inc" id="opcion-b">
+  <div class="container">
+    <div class="opt-hero">
+      <div class="opt-titles">
+        <span class="opt-num">Opción B</span>
+        <h2 style="color:var(--white)">Cobertura audiovisual<br>premium — 2 jornadas</h2>
+        <p class="opt-desc" style="color:var(--gray-300)">La misma cobertura, potenciada: filmmaker y fotógrafo trabajando en paralelo para no perder ningún momento del evento.</p>
+      </div>
+      <div class="opt-recommend-flag">RECOMENDADA</div>
+    </div>
+
+    <div class="inherit-banner">
+      <span class="ib-ico">Base</span>
+      <p><b>Todo lo incluido en la Opción A.</b> — mismas dos jornadas, mismos horarios, mismos entregables, con toda la documentación (Certificado de Accidentes Personales y Cláusula de No Repetición).</p>
+    </div>
+
+    <div class="plus-banner">
+      <span class="pb-plus">+</span>
+      <div class="pb-txt">
+        <h4>1 fotógrafo profesional dedicado exclusivamente a fotografía</h4>
+        <p>Se suma al filmmaker para duplicar la capacidad de registro simultáneo durante ambas jornadas.</p>
+      </div>
+    </div>
+
+    <div class="inc-block">
+      <div class="inc-title">Incluye</div>
+      <div class="inc-grid">
+        <div class="inc-item"><span class="chk"></span><span class="it-txt"><b>Todo lo incluido en la Opción A.</b></span></div>
+        <div class="inc-item"><span class="chk"></span><span class="it-txt"><b>1 filmmaker.</b></span></div>
+        <div class="inc-item"><span class="chk hi"></span><span class="it-txt"><b>1 fotógrafo profesional</b> dedicado exclusivamente a fotografía.</span></div>
+      </div>
+    </div>
+
+    <div class="opt-close">
+      <span class="oc-mark">B</span>
+      <p><strong>Recomendada para aprovechar al máximo el evento y obtener un material mucho más completo para comunicación futura.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICIOS OPCIÓN B -->
+<section class="section section-tram" id="beneficios">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Por qué la Opción B</span>
+      <h2>Lo que suma el <span class="accent">fotógrafo dedicado</span></h2>
+      <p>Con dos profesionales cubriendo en simultáneo, el evento se registra sin puntos ciegos y el banco de material crece en cantidad y en calidad.</p>
+    </div>
+    <div class="ben-grid">
+      <div class="ben-card reveal"><span class="bn">01</span><p>Mayor cobertura simultánea.</p></div>
+      <div class="ben-card reveal"><span class="bn">02</span><p>Más variedad de planos.</p></div>
+      <div class="ben-card reveal"><span class="bn">03</span><p>Posibilidad de registrar momentos que suceden en paralelo.</p></div>
+      <div class="ben-card reveal"><span class="bn">04</span><p>Mejor cobertura de networking, expositores y asistentes.</p></div>
+      <div class="ben-card reveal"><span class="bn">05</span><p>Mayor calidad del banco fotográfico y audiovisual.</p></div>
+      <div class="ben-card reveal"><span class="bn">06</span><p>El filmmaker puede concentrarse en video mientras el fotógrafo cubre todos los momentos institucionales.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OBSERVACIÓN TÉCNICA -->
+<section class="section section-dark" id="observacion">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Observación técnica</span>
+      <h2>Una cobertura <span class="accent">dinámica</span>,<br>pensada para comunicación</h2>
+    </div>
+    <div class="obs-wrap">
+      <div class="obs-intro">
+        <p class="lede">Como el objetivo no es registrar todas las ponencias completas, sino generar contenido reutilizable para comunicación, durante ambas jornadas se realizará una cobertura dinámica.</p>
+        <div class="obs-note">
+          <div class="nl">Importante</div>
+          <p>El foco está puesto en captar el pulso del evento y en construir un banco de material versátil, más que en el registro íntegro de cada conferencia.</p>
+        </div>
+      </div>
+      <div class="obs-focus">
+        <div class="obs-focus-label">La cobertura se enfoca en</div>
+        <div class="obs-chips">
+          <div class="obs-chip reveal"><span class="oc-dot"></span>asistentes</div>
+          <div class="obs-chip reveal"><span class="oc-dot"></span>networking</div>
+          <div class="obs-chip reveal"><span class="oc-dot"></span>conferencias</div>
+          <div class="obs-chip reveal"><span class="oc-dot"></span>detalles del evento</div>
+          <div class="obs-chip reveal"><span class="oc-dot"></span>branding</div>
+          <div class="obs-chip reveal"><span class="oc-dot"></span>sponsors</div>
+          <div class="obs-chip reveal"><span class="oc-dot"></span>interacción entre participantes</div>
+          <div class="obs-chip reveal"><span class="oc-dot"></span>entrevistas</div>
+          <div class="obs-chip reveal"><span class="oc-dot"></span>ambiente general</div>
+          <div class="obs-chip reveal"><span class="oc-dot"></span>recursos audiovisuales para futuras piezas institucionales</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCIA POPCORN -->
+<section class="section section-purple" id="experiencia">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow" style="color:var(--cyan)">Experiencia Popcorn</span>
+      <h2 style="color:#fff">Así trabajamos</h2>
+      <p style="color:rgba(255,255,255,0.85)">Una selección de producciones audiovisuales de Popcorn. Tocá cualquiera para reproducirla.</p>
+    </div>
+
+    <div class="reel-featured">
+      <div class="video-wrap" data-yt="ftpzXK_LL1A" role="button" tabindex="0" aria-label="Reproducir Reel 1 de Popcorn">
+        <img class="video-poster" src="Img/reel1.jpg" alt="Reel 1 Popcorn — producción audiovisual" loading="lazy">
+        <div class="video-overlay">
+          <button class="play-btn" aria-hidden="true"><span class="tri"></span></button>
+          <div class="video-overlay-info"><span class="src">Reel 01 · Popcorn</span><span class="vt">Producción audiovisual en acción</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reel-grid four">
+      <div class="reel" data-yt="phiifNcUAg4" role="button" tabindex="0" aria-label="Reproducir Reel 2">
+        <img src="Img/reel2.jpg" alt="Reel 2 Popcorn" loading="lazy"><div class="r-ov"></div>
+        <div class="r-label"><span>Reel</span>02</div>
+      </div>
+      <div class="reel" data-yt="ayfpHCH8w98" role="button" tabindex="0" aria-label="Reproducir Reel 3">
+        <img src="Img/reel3.jpg" alt="Reel 3 Popcorn" loading="lazy"><div class="r-ov"></div>
+        <div class="r-label"><span>Reel</span>03</div>
+      </div>
+      <div class="reel" data-yt="XF9fT_3MnAo" role="button" tabindex="0" aria-label="Reproducir Reel 4">
+        <img src="Img/reel4.jpg" alt="Reel 4 Popcorn" loading="lazy"><div class="r-ov"></div>
+        <div class="r-label"><span>Reel</span>04</div>
+      </div>
+      <div class="reel" data-yt="pfLrLzqZe6A" role="button" tabindex="0" aria-label="Reproducir Reel 5">
+        <img src="Img/reel5.jpg" alt="Reel 5 Popcorn" loading="lazy"><div class="r-ov"></div>
+        <div class="r-label"><span>Reel</span>05</div>
+      </div>
+    </div>
+    <p class="reel-note">¿No cargan los videos? Miralos directo en YouTube:
+      <a href="https://youtu.be/ftpzXK_LL1A" target="_blank" rel="noopener">Reel 1</a> ·
+      <a href="https://youtu.be/phiifNcUAg4" target="_blank" rel="noopener">Reel 2</a> ·
+      <a href="https://youtu.be/ayfpHCH8w98" target="_blank" rel="noopener">Reel 3</a> ·
+      <a href="https://youtu.be/XF9fT_3MnAo" target="_blank" rel="noopener">Reel 4</a> ·
+      <a href="https://youtu.be/pfLrLzqZe6A" target="_blank" rel="noopener">Reel 5</a>
+    </p>
+  </div>
+</section>
+
+<!-- CASO DE ÉXITO / TESTIMONIO -->
+<section class="section section-dark" id="caso">
+  <div class="container">
+    <div class="caso-wrap">
+      <div class="caso-info">
+        <div class="caso-eyebrow">Caso de éxito · Testimonio</div>
+        <h2 style="color:#fff">Hablemos con<br>Popcorn — <span class="accent">Kanji</span></h2>
+        <p>Popcorn no solo produce piezas: construye vínculo con las marcas. En este episodio de <strong style="color:#fff">Hablemos con Popcorn</strong> conversamos con Kanji, una muestra del trabajo y de la relación de la agencia con sus clientes.</p>
+        <p>Es la evidencia de una capacidad profesional puesta al servicio de marcas reales: experiencia, confianza y trabajo sostenido en el tiempo.</p>
+        <div class="caso-meta">
+          <div class="caso-tag"><span class="ct-l">Cliente</span><span class="ct-v acc">Kanji</span></div>
+          <div class="caso-tag"><span class="ct-l">Formato</span><span class="ct-v">Hablemos con Popcorn</span></div>
+          <div class="caso-tag"><span class="ct-l">Muestra</span><span class="ct-v">Vínculo con clientes</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="video-wrap" data-yt="aB-cYk2z3p0" data-href="https://www.youtube.com/watch?v=aB-cYk2z3p0&list=PLzcpuXtX6jpzTR0vkFy3nmwVI_-3dGGUQ&index=2" role="button" tabindex="0" aria-label="Reproducir caso de éxito Hablemos con Popcorn Kanji">
+          <img class="video-poster" src="Img/caso.jpg" alt="Hablemos con Popcorn — Kanji" loading="lazy">
+          <div class="video-overlay">
+            <button class="play-btn" aria-hidden="true"><span class="tri"></span></button>
+            <div class="video-overlay-info"><span class="src">Caso de éxito · Popcorn</span><span class="vt">Hablemos con Popcorn · Kanji</span></div>
+          </div>
+        </div>
+        <p class="reel-note" style="text-align:left">Ver en YouTube:
+          <a href="https://www.youtube.com/watch?v=aB-cYk2z3p0&list=PLzcpuXtX6jpzTR0vkFy3nmwVI_-3dGGUQ&index=2" target="_blank" rel="noopener">Hablemos con Popcorn — Kanji</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVERSIÓN -->
+<section class="section section-light" id="inversion">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow">Inversión</span>
+      <h2>Dos alternativas,<br>una <span class="hl hl-ink">decisión clara</span></h2>
+      <p>Elegí la cobertura que mejor se ajusta al evento. La Opción B es nuestra recomendación para obtener el material más completo.</p>
+    </div>
+    <div class="inv-grid">
+      <div class="inv-card a">
+        <div class="inv-tag">Opción A</div>
+        <h3>Cobertura audiovisual — 2 jornadas</h3>
+        <div class="inv-sub">Cobertura completa + optimización de presupuesto</div>
+        <div class="inv-amount"><span class="cur">$</span><span class="num">3.300.000</span></div>
+        <div class="inv-iva">+ IVA</div>
+        <ul class="inv-feats">
+          <li>1 filmmaker · 2 jornadas completas</li>
+          <li>Fotografía con retoque básico ilimitada</li>
+          <li>Registro, B-Roll, entrevistas y audio</li>
+          <li>Edición de 5 reels para redes</li>
+          <li>Documentación completa incluida</li>
+        </ul>
+        <a href="#" class="btn btn-purple js-cta-a">Avanzar con Opción A</a>
+      </div>
+      <div class="inv-card b">
+        <div class="inv-badge">★ RECOMENDADA</div>
+        <div class="inv-tag">Opción B</div>
+        <h3>Cobertura audiovisual premium — 2 jornadas</h3>
+        <div class="inv-sub">Cobertura premium + mayor material + registro simultáneo</div>
+        <div class="inv-amount"><span class="cur">$</span><span class="num">4.400.000</span></div>
+        <div class="inv-iva">+ IVA</div>
+        <ul class="inv-feats">
+          <li>Todo lo incluido en la Opción A</li>
+          <li>+ 1 fotógrafo profesional dedicado</li>
+          <li>Mayor cobertura simultánea y variedad de planos</li>
+          <li>Registro de momentos en paralelo</li>
+          <li>Banco fotográfico y audiovisual de mayor calidad</li>
+        </ul>
+        <a href="#" class="btn btn-cyan js-cta-b">Avanzar con Opción B</a>
+      </div>
+    </div>
+    <div class="pay-section">
+      <div class="pay-head">
+        <span class="eyebrow">Formas de pago</span>
+        <h3>Elegí cómo abonar<br>la cobertura</h3>
+      </div>
+      <div class="pay-grid">
+        <div class="pay-card featured">
+          <div class="pay-badge">−3% OFF</div>
+          <span class="pay-op">Opción 1</span>
+          <h4>100% adelantado</h4>
+          <p>Pago del total por adelantado con un <b>3% de descuento</b> sobre el valor de la opción elegida.</p>
+        </div>
+        <div class="pay-card">
+          <span class="pay-op">Opción 2</span>
+          <h4>En dos etapas</h4>
+          <p><b>50% al iniciar</b> el proyecto y <b>50% al mes o al finalizar</b>, lo que ocurra primero.</p>
+          <div class="pay-steps">
+            <div class="pay-step"><div class="ps-pct">50%</div><div class="ps-when">Al iniciar el proyecto</div></div>
+            <div class="pay-step"><div class="ps-pct">50%</div><div class="ps-when">Al mes o al finalizar, lo que ocurra primero</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="inv-legal">Valores expresados en pesos argentinos. Precios + IVA.</p>
+  </div>
+</section>
+
+<!-- CIERRE -->
+<section class="close">
+  <div class="container">
+    <img class="close-logo" src="Img/popcorn-blanco.png" alt="Popcorn">
+    <h2>Hagamos que este evento<br>siga <span class="accent">comunicando</span></h2>
+    <p>Coordinemos los últimos detalles y dejamos todo listo para las jornadas del 12 y 13 de agosto.</p>
+    <div class="close-cta">
+      <a href="#" class="btn btn-cyan js-cta-b">Avanzar con la propuesta</a>
+      <a href="#alternativas" class="btn btn-ghost">Revisar las alternativas</a>
+    </div>
+    <div class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Img/popcorn-blanco.png" alt="Popcorn">
+          <p>Marketing, comunicación y creatividad</p>
+        </div>
+        <div class="footer-contact">
+          <div class="fc-item"><div class="fl">Contacto</div><div class="fv"><a href="mailto:demianlinet@somospopcorn.com">demianlinet@somospopcorn.com</a></div></div>
+          <div class="fc-item"><div class="fl">Web</div><div class="fv"><a href="https://somospopcorn.com/" target="_blank" rel="noopener">somospopcorn.com</a></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+/* GATE / ACCESO */
+(function(){
+  var USER='VCONGRESSES', PASS='2766', KEY='vcongress_access';
+  var gate=document.getElementById('gate');
+  function unlock(){
+    document.body.classList.remove('locked');
+    gate.classList.add('hidden');
+    setTimeout(function(){ if(gate&&gate.parentNode) gate.parentNode.removeChild(gate); },600);
+  }
+  try{ if(sessionStorage.getItem(KEY)==='1'){ unlock(); return; } }catch(e){}
+  var form=document.getElementById('gate-form'),
+      err=document.getElementById('g-error');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var u=document.getElementById('g-user').value.trim(),
+        p=document.getElementById('g-pass').value.trim();
+    if(u.toUpperCase()===USER && p===PASS){
+      try{ sessionStorage.setItem(KEY,'1'); }catch(e){}
+      err.classList.remove('show');
+      unlock();
+    }else{
+      err.classList.add('show');
+      document.getElementById('g-pass').value='';
+      document.getElementById('g-pass').focus();
+    }
+  });
+  document.getElementById('g-user').focus();
+})();
+
+/* CTA mailto */
+(function(){
+  const TO='demianlinet@somospopcorn.com';
+  function build(opt,precio){
+    const subject='Cobertura Audiovisual · VCongresses — Opción '+opt;
+    const body=
+      'Hola Florencia,\n\n'+
+      'Queremos avanzar con la propuesta de cobertura audiovisual para nuestro evento corporativo.\n\n'+
+      '— Selección —\n'+
+      '• Opción '+opt+'\n'+
+      '• Inversión: '+precio+' + IVA\n'+
+      '• Jornadas: miércoles 12 (10:00 a 20:00) y jueves 13 de agosto (9:00 a 18:30)\n\n'+
+      'Quedamos a la espera para coordinar los próximos pasos.\n';
+    return 'mailto:'+TO+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  }
+  document.querySelectorAll('.js-cta-a').forEach(a=>a.href=build('A','$3.300.000'));
+  document.querySelectorAll('.js-cta-b').forEach(a=>a.href=build('B (Recomendada)','$4.400.000'));
+})();
+
+/* Video card → abre el video en YouTube (funciona local y hosteado, sin errores de embed) */
+(function(){
+  document.querySelectorAll('[data-yt]').forEach(el=>{
+    function open_(){
+      const id=el.dataset.yt;
+      const href=el.dataset.href||('https://www.youtube.com/watch?v='+id);
+      window.open(href,'_blank','noopener');
+    }
+    el.addEventListener('click',open_);
+    el.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open_(); } });
+  });
+})();
+
+/* Scroll reveal */
+(function(){
+  if(typeof IntersectionObserver==='undefined')return;
+  document.querySelectorAll('.intro-grid,.ben-grid,.obs-chips').forEach(grid=>{
+    Array.from(grid.children).forEach((child,i)=>{
+      if(child.classList.contains('reveal')){
+        const d=Math.min(i,4);
+        if(d>0)child.classList.add('delay-'+d);
+      }
+    });
+  });
+  const ro=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.classList.add('in-view');ro.unobserve(entry.target);}
+    });
+  },{threshold:0.16,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+})();
+</script>
+</body>
+</html>
